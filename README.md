@@ -13,6 +13,7 @@ A systemd service provided for your convenience. I strongly recommend running th
 Only do this if you know what you're doing.
 
 `cp dellfancontrol /usr/bin/`
+
 `cp dellfancontrol.service /etc/systemd/system/`
 
 and reboot. To start at boot, do `systemctl enable dellfancontrol.service`.
