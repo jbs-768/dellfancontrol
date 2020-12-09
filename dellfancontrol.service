@@ -1,0 +1,10 @@
+[Unit]
+Description = Fan control service for Dell laptops
+After = systemd-remount-fs.service systemd-sysusers.service
+
+[Service]
+type = simple
+ExecStart = /usr/bin/dellfancontrol
+ 
+[Install]
+WantedBy = default.target
